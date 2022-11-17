@@ -1,5 +1,4 @@
-# LEMP Setup on Ubuntu (Linux) Server
-Linux Nginx MySQL PHP
+# LEMP (Linux Nginx MySQL PHP) Setup on Ubuntu (Linux) Server
 
 
 Update Ubuntu Server
