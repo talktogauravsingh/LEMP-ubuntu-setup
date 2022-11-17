@@ -168,7 +168,7 @@ sudo systemctl restart mysql
 ```
 
 Create Mysql User For Any IP
-```
+```mysql
 CREATE USER 'gaurav'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 GRANT ALL PRIVILEGES ON database_name.* TO 'gaurav'@'%';
 GRANT ALL PRIVILEGES ON *.* TO 'gaurav'@'%';
@@ -177,7 +177,7 @@ FLUSH PRIVILEGES;
 ```
 
 Create Mysql User For Particular IP
-```
+```mysql
 CREATE USER 'gaurav'@'192.168.0.1' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
