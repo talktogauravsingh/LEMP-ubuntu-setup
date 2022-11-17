@@ -166,3 +166,27 @@ Restart Mysql
 ```
 sudo systemctl restart mysql
 ```
+
+Create Mysql User For Any IP
+```
+CREATE USER 'gaurav'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+GRANT ALL PRIVILEGES ON database_name.* TO 'gaurav'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'gaurav'@'%';
+revoke all privileges on demo.* from 'gaurav'@'%';
+FLUSH PRIVILEGES;
+```
+
+Create Mysql User For Particular IP
+```
+CREATE USER 'gaurav'@'192.168.0.1' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+Mysql Confi File
+```
+/etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+Uninstall MySQL
+```
+sudo apt-get remove --purge mysql*
+```
