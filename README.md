@@ -151,7 +151,7 @@ Restart Nginx
 sudo systemctl restart nginx
 ```
 
-###Some Important Command
+### Some Important Command
 
 Restart PHP FPM
 ```
